@@ -1,0 +1,7 @@
+﻿  FuncWithExcludedPoints.cpp
+  FuncWithSpecificValues.cpp
+  HomeWorkUP2.cpp
+  Generating Code...
+C:\Users\vikto\Desktop\FMI\Second_Semester\OOP\HomeWorkUP2\HomeWorkUP2\FuncFactory.cpp(40,1): warning C4715: 'FuncFactory': not all control paths return a value
+C:\Users\vikto\Desktop\FMI\Second_Semester\OOP\HomeWorkUP2\HomeWorkUP2\FuncWithSpecificValues.cpp(86,1): warning C4715: 'FuncWithSpecificValues::operator()': not all control paths return a value
+  HomeWorkUP2.vcxproj -> C:\Users\vikto\Desktop\FMI\Second_Semester\OOP\HomeWorkUP2\x64\Debug\HomeWorkUP2.exe
