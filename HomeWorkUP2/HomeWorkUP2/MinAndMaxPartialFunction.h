@@ -1,22 +1,24 @@
 #pragma once
 #include "PartialFunction.hpp"
-#include "Pair.h"
 
-class MinAndMaxPartialFunction : public PartialFunction<int> {
-	void copyFrom(const MinAndMaxPartialFunction& other);
-	void moveFrom(MinAndMaxPartialFunction&& other);
+template<class ReturnType>
+class MinAndMaxPartialFunction : public PartialFunction<ReturnType> {
+	void copyFrom(const MinAndMaxPartialFunction<ReturnType>& other);
+	void moveFrom(MinAndMaxPartialFunction<ReturnType>&& other);
 	void free();
 protected:
-	PartialFunction<Pair>** _functions;
+	PartialFunction<ReturnType>** _functions;
 	size_t count;
+	size_t cap;
+	void resize(size_t newCap);
 public:
-	MinAndMaxPartialFunction(const PartialFunction<Pair>** functions, size_t functionsCount);
-	MinAndMaxPartialFunction(const MinAndMaxPartialFunction& other);
-	MinAndMaxPartialFunction(MinAndMaxPartialFunction&& other) noexcept;
-	MinAndMaxPartialFunction& operator=(const MinAndMaxPartialFunction& other);
-	MinAndMaxPartialFunction& operator=(MinAndMaxPartialFunction&& other) noexcept;
+	MinAndMaxPartialFunction();
+	MinAndMaxPartialFunction(const PartialFunction<ReturnType>** functions, size_t functionsCount);
+	MinAndMaxPartialFunction(const MinAndMaxPartialFunction<ReturnType>& other);
+	MinAndMaxPartialFunction(MinAndMaxPartialFunction<ReturnType>&& other) noexcept;
+	MinAndMaxPartialFunction& operator=(const MinAndMaxPartialFunction<ReturnType>& other);
+	MinAndMaxPartialFunction& operator=(MinAndMaxPartialFunction<ReturnType>&& other) noexcept;
 	virtual ~MinAndMaxPartialFunction() noexcept;
+	void addFunction(const PartialFunction<ReturnType>* function);
 	virtual bool isDefined(int32_t point) const override;
-	virtual int operator()(int32_t point) const = 0;
-	virtual PartialFunction<int>* clone() const = 0;
 };

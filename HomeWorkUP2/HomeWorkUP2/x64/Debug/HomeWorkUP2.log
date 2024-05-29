@@ -1,7 +1,19 @@
-﻿  FuncWithExcludedPoints.cpp
-  FuncWithSpecificValues.cpp
-  HomeWorkUP2.cpp
+﻿  FuncFactory.cpp
+  MaxPartialFunction.cpp
+C:\Users\vikto\Desktop\FMI\Second_Semester\OOP\HomeWorkUP2\HomeWorkUP2\MaxPartialFunction.cpp(13,19): error C3861: '_functions': identifier not found
+C:\Users\vikto\Desktop\FMI\Second_Semester\OOP\HomeWorkUP2\HomeWorkUP2\MaxPartialFunction.cpp(14,25): error C2065: 'count': undeclared identifier
+C:\Users\vikto\Desktop\FMI\Second_Semester\OOP\HomeWorkUP2\HomeWorkUP2\MaxPartialFunction.cpp(14,25): error C3861: 'count': identifier not found
+C:\Users\vikto\Desktop\FMI\Second_Semester\OOP\HomeWorkUP2\HomeWorkUP2\MaxPartialFunction.cpp(16,29): error C3861: '_functions': identifier not found
+C:\Users\vikto\Desktop\FMI\Second_Semester\OOP\HomeWorkUP2\HomeWorkUP2\MaxPartialFunction.cpp(13,19): error C2065: '_functions': undeclared identifier
+C:\Users\vikto\Desktop\FMI\Second_Semester\OOP\HomeWorkUP2\HomeWorkUP2\MaxPartialFunction.cpp(16,29): error C2065: '_functions': undeclared identifier
+  MinAndMaxPartialFunction.cpp
+C:\Users\vikto\Desktop\FMI\Second_Semester\OOP\HomeWorkUP2\HomeWorkUP2\MinAndMaxPartialFunction.cpp(81,16): error C2039: 'move': is not a member of 'std'
+C:\Users\vikto\Desktop\FMI\Second_Semester\OOP\HomeWorkUP2\HomeWorkUP2\MinAndMaxPartialFunction.cpp(101,17): error C2039: 'move': is not a member of 'std'
+  MinPartialFunction.cpp
+C:\Users\vikto\Desktop\FMI\Second_Semester\OOP\HomeWorkUP2\HomeWorkUP2\MinPartialFunction.cpp(13,19): error C3861: '_functions': identifier not found
+C:\Users\vikto\Desktop\FMI\Second_Semester\OOP\HomeWorkUP2\HomeWorkUP2\MinPartialFunction.cpp(14,25): error C2065: 'count': undeclared identifier
+C:\Users\vikto\Desktop\FMI\Second_Semester\OOP\HomeWorkUP2\HomeWorkUP2\MinPartialFunction.cpp(14,25): error C3861: 'count': identifier not found
+C:\Users\vikto\Desktop\FMI\Second_Semester\OOP\HomeWorkUP2\HomeWorkUP2\MinPartialFunction.cpp(16,29): error C3861: '_functions': identifier not found
+C:\Users\vikto\Desktop\FMI\Second_Semester\OOP\HomeWorkUP2\HomeWorkUP2\MinPartialFunction.cpp(13,19): error C2065: '_functions': undeclared identifier
+C:\Users\vikto\Desktop\FMI\Second_Semester\OOP\HomeWorkUP2\HomeWorkUP2\MinPartialFunction.cpp(16,29): error C2065: '_functions': undeclared identifier
   Generating Code...
-C:\Users\vikto\Desktop\FMI\Second_Semester\OOP\HomeWorkUP2\HomeWorkUP2\FuncFactory.cpp(40,1): warning C4715: 'FuncFactory': not all control paths return a value
-C:\Users\vikto\Desktop\FMI\Second_Semester\OOP\HomeWorkUP2\HomeWorkUP2\FuncWithSpecificValues.cpp(86,1): warning C4715: 'FuncWithSpecificValues::operator()': not all control paths return a value
-  HomeWorkUP2.vcxproj -> C:\Users\vikto\Desktop\FMI\Second_Semester\OOP\HomeWorkUP2\x64\Debug\HomeWorkUP2.exe

@@ -1,9 +1,11 @@
 #pragma once
 #include "MinAndMaxPartialFunction.h"
 
-class MinPartialFunction : public MinAndMaxPartialFunction {
+template<class ReturnType>
+class MinPartialFunction : public MinAndMaxPartialFunction<ReturnType> {
 public:
-	MinPartialFunction(const PartialFunction<Pair>** functions, size_t functionsCount);
-	virtual PartialFunction<int>* clone() const override;
-	virtual int operator()(int32_t point) const override;
+	MinPartialFunction();
+	MinPartialFunction(const PartialFunction<ReturnType>** functions, size_t functionsCount);
+	virtual PartialFunction<ReturnType>* clone() const override;
+	virtual ReturnType operator()(int32_t point) const override;
 };

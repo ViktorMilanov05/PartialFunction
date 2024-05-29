@@ -1,18 +1,27 @@
 #include "MinPartialFunction.h"
 
-MinPartialFunction::MinPartialFunction(const PartialFunction<Pair>** functions, size_t functionsCount) : MinAndMaxPartialFunction(functions, functionsCount) {};
+template<class ReturnType>
+MinPartialFunction<ReturnType>::MinPartialFunction() : MinAndMaxPartialFunction<ReturnType>()
+{
+}
 
-int MinPartialFunction::operator()(int32_t point) const {
-	int min = _functions[0]->operator()(point).getValue();
+template<class ReturnType>
+MinPartialFunction<ReturnType>::MinPartialFunction(const PartialFunction<ReturnType>** functions, size_t functionsCount) : MinAndMaxPartialFunction<ReturnType>(functions, functionsCount) {};
+
+template<class ReturnType>
+ReturnType MinPartialFunction<ReturnType>::operator()(int32_t point) const {
+	ReturnType min = _functions[0]->operator()(point);
 	for (size_t i = 1; i < count; i++)
 	{
-		int currentValue = _functions[i]->operator()(point).getValue();
-		if (min > _functions[0]->operator()(point).getValue()) {
+		ReturnType currentValue = _functions[i]->operator()(point);
+		if (min.getValue() > currentValue.getValue()) {
 			min = currentValue;
 		}
 	}
 	return min;
 }
-PartialFunction<int>* MinPartialFunction::clone() const {
+
+template<class ReturnType>
+PartialFunction<ReturnType>* MinPartialFunction<ReturnType>::clone() const {
 	return new MinPartialFunction(*this);
 }
