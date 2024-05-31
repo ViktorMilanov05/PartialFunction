@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\vikto\Desktop\FMI\Second_Semester\OOP\PartialFunction\PartialFunction\main.cpp(12,33): warning C4267: 'argument': conversion from 'size_t' to 'int32_t', possible loss of data
+C:\Users\vikto\Desktop\FMI\Second_Semester\OOP\PartialFunction\PartialFunction\main.cpp(13,70): warning C4267: 'argument': conversion from 'size_t' to 'int32_t', possible loss of data
+  PartialFunction.vcxproj -> C:\Users\vikto\Desktop\FMI\Second_Semester\OOP\PartialFunction\x64\Debug\PartialFunction.exe
